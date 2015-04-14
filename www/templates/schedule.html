@@ -1,0 +1,16 @@
+<ion-view title="Schedule">
+
+    <ion-content class="has-header" has-tabs="true">
+		
+		<ion-list>
+	    	<ion-item ng-repeat="session in sessions" ui-sref="app.session-detail({ sessionId: session.id })" class="item item-avatar item-text-wrap">
+	    		<img ng-src="{{session.imageUrl}}"/>
+	        	<span style="font-size:10pt; font-weight: lighter;">{{session.time}}</span><br>
+	        	{{session.name}}<br>
+	        	<span style="font-size:10pt; font-weight: lighter;">{{session.room}}</span>
+	      	</ion-item>
+	    </ion-list>
+
+	</ion-content>
+
+</ion-view>

@@ -1,0 +1,56 @@
+<ion-view title="Session">
+
+	<ion-nav-buttons side="left">
+		<ion-nav-back-button class="button-light" ng-click="goBack()">
+      		<i class="icon ion-ios7-arrow-back"></i> Schedule
+      	</ion-nav-back-button>
+	</ion-nav-buttons>
+
+	<ion-content class="has-header padding">
+	
+		<div ng-controller="SessionDetailCtrl">
+			
+			<div class="card">
+				
+				<div class="item item-text-wrap item-divider">
+					<h2>{{session.name}}</h2>
+        			<p>{{session.room}} | {{session.day}}&nbsp;{{session.time}}</p>
+				</div>
+				
+				<div class="item item-body">
+					<h3>Speakers</h3>
+					<p>{{session.speaker}}</p>
+					<p>{{session.speaker2}}</p>
+					<p>{{session.speaker3}}</p>
+					<p>{{session.speaker4}}</p>
+					<p>{{session.speaker5}}</p>
+					<p>{{session.speaker6}}</p>
+					<p>{{session.speaker7}}</p>
+					
+					<h3>Intended Audience</h3>
+					<p>{{session.audience}}</p>
+					
+					<h3>Description</h3>
+					<p>{{session.snippet}}</p>
+					<p>{{session.snippet2}}</p>
+					<p>{{session.snippet3}}</p>
+					<ul>
+						<li>{{session.point}}</li>
+						<li>{{session.point2}}</li>
+						<li>{{session.point3}}</li>
+						<li>{{session.point4}}</li>
+						<li>{{session.point5}}</li>
+						<li>{{session.point6}}</li>
+						<li>{{session.point7}}</li>
+						<li>{{session.point8}}</li>
+						<li>{{session.point9}}</li>
+					</ul>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+  	</ion-content>
+
+</ion-view>

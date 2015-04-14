@@ -1,0 +1,33 @@
+<ion-view title="Application Name">
+    <ion-content has-header="true" has-tabs="true" padding="true">
+        <!--<button class="button button-block button-positive" ng-click="login()">
+            LOG IN
+        </button>
+
+        <button class="button button-block button-positive" ng-click="signUp()">
+            SIGN UP
+        </button>-->
+        
+        <div align="center">
+    		<img src="http://wn4.ubabenefits.com/Portals/0/Images/Meetings/UBASpringMeetingIcon.png" style="width:40%; padding-top:10px;"/>
+    		<p>This app is exclusively for UBA Partners and their employees. Enter the Username and Password to get access to presentations, speaker bios, and more.</p>
+    	</div>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label"><i class="icon ion-person" id="menu-icon"></i>&nbsp;Username</span>
+                <input type="text" ng-model="user.username">
+            </label>
+            <label class="item item-input">
+                <span class="input-label"><i class="icon ion-locked" id="menu-icon"></i>&nbsp;Password</span>
+                <input type="password" ng-model="user.password">
+            </label>
+        </div>
+        <div class="assertive" ng-show="error.message">{{error.message}}</div>
+        <button class="button button-block button-stable" ng-click="login()">
+            Get Access
+        </button>
+        <!--<button class="button button-block button-clear button-calm" ng-click="forgot()">
+            Forgot Passcode?
+        </button>-->
+    </ion-content>
+</ion-view>
