@@ -20,7 +20,7 @@
   </feature>
   
   <gap:plugin name="org.apache.cordova.device"/>
-  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
   
   <!-- <platform name="ios">
     <icon src="resources/ios/icon/icon.png" width="57" height="57"/>
