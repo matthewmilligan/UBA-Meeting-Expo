@@ -24,7 +24,7 @@ angular.module('ionicParseApp',
                 }
             }
         });
-    });
+    })
     
     .config(function($stateProvider, $urlRouterProvider) {
 
